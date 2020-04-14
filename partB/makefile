@@ -8,3 +8,6 @@ task3:
 	gcc -o pro3 main2_3.c 
 task4:
 	gcc -o app main2_4.c
+
+clean:
+	rm pro1 pro2 pro3 app
