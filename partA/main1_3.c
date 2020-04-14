@@ -8,7 +8,7 @@ void (*hello_message)(const char *);
 
 bool init_library()
 {
-    void *hdl = dlopen("./libhello.so", RTLD_LAZY);
+    void *hdl = dlopen("./libHello.so", RTLD_LAZY);
     if (hdl == NULL)
         return false;
     hello_message = (void (*)(const char *))dlsym(hdl, "hello");
